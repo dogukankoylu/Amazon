@@ -4,6 +4,7 @@ import Utilities.MyDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
 public class Steps {
@@ -22,7 +23,7 @@ public class Steps {
         login.getAmazon("https://www.amazon.com.tr/ref=nav_logo");
         login.closeCookie();
     }
-    @And("searches for a product on the homepage")
+    @When("searches for a product on the homepage")
     public void searchesForAProductOnTheHomepage() {
         login.searchBox("iphone");
     }
